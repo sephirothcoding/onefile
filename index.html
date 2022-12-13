@@ -205,7 +205,6 @@ h1 {
 	transform: translate(-50%, -50%);
 	width: 325px;
 	height: 325px;
-	background: #1071dda6;
 	box-sizing: border-box;
 	overflow: hidden;
 	box-shadow: 0 20px 50px rgb(119 130 202);
@@ -221,7 +220,6 @@ h1 {
 	transform: translate(-50%, -50%);
 	width: 325px;
 	height: 325px;
-	background: #204b7ca6;
 	box-sizing: border-box;
 	overflow: hidden;
 	box-shadow: 0 20px 50px rgb(119 130 202);
@@ -230,14 +228,24 @@ h1 {
 	padding: 20px;
 }
 
-
+.box .content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 0 20px 50px rgb(23, 32, 90);
+	border: 2px solid #2a3cad;
+	color: white;
+	padding: 20px;
+}
+		
 .box .content2 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
-	background: #ffffffa6;
 	box-sizing: border-box;
 	overflow: hidden;
 	box-shadow: 0 20px 50px rgb(23, 32, 90);
@@ -265,20 +273,7 @@ h1 {
 }
 
 
-.box .content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 
-	background: #ffffffa6;
-	box-sizing: border-box;
-	overflow: hidden;
-	box-shadow: 0 20px 50px rgb(23, 32, 90);
-	border: 2px solid #2a3cad;
-	color: white;
-	padding: 20px;
-}
 }
 
 .box span {
@@ -1743,12 +1738,12 @@ $('#btnReload').click(function () {
 
   
  <div class="background-img">
-      <div class="box2">
+      <div class="box">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <div class="content2">
+        <div class="content">
         
           <p><img src="https://xatimg.com/image/Z0IEkxjwTavk.gif" width="300" height="300"</p>
 	      </div>
