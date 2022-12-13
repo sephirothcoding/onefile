@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font:100%/1.6 Roboto,sans-serif;
+  color:#333;
+  background: url("https://img.xatblog.net/image/w3lXd00P2A.jpg");
+  background-size: cover;
+  
+}
+
+@keyframes jiggle {
+  
+  0% {
+    transform:rotate(0deg) translateY(0px);
+  }
+
+  50% {
+    transform:rotate(13deg) translateY(5px);
+  }
+  
+  
+}
+
+span {
+  display: inline-block;
+}
+
+h1 {
+  display: inline-block;
+  text-align: center;
+  color: blue;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 40px;
+  border:3px solid blue;
+  border-right: none;
+  border-left:none;
+  transition:0.8s ease;
+  &:hover {
+    transform:scale(1.5) rotate(-5deg);
+  }
+  
+  & span:nth-child(1) {
+     animation:.3s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(2) {
+     animation:.3s 0.1s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(3) {
+     animation:.3s 0.2s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(4) {
+     animation:.3s 0.3s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(5) {
+     animation:.5s 0.4s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(6) {
+     animation:.3s 0.5s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(7) {
+     animation:.3s 0.6s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  
+}
+.container {
+  min-height: 300px;
+  display:grid;
+  justify-content:center;
+  align-content:center;
+  
+}
+
+
+
+
+
+
+
