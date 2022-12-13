@@ -8,6 +8,19 @@ $(document).ready(function() {
 
 
 
+
+
+if ( navigator.platform.indexOf('Win') != -1 ) {
+  window.document.getElementById("wrapper").setAttribute("class", "windows");
+} else if ( navigator.platform.indexOf('Mac') != -1 ) {
+  window.document.getElementById("wrapper").setAttribute("class", "mac");
+}
+
+
+
+
+
+
 // Increments the delay on each item.
 $('.rolldown-list li').each(function () {
   var delay = ($(this).index() / 4) + 's';
